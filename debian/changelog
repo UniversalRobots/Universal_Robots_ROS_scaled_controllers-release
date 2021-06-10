@@ -1,0 +1,8 @@
+ros-noetic-speed-scaling-interface (0.1.0-1focal) focal; urgency=high
+
+  * Moved speed scaling interface to own package
+  * Contributors: Felix Exner
+
+ -- Felix Exner <exner@fzi.de>  Wed, 09 Jun 2021 22:00:00 -0000
+
+
