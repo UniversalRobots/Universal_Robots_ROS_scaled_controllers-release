@@ -1,23 +1,21 @@
-# Scaled controllers
+# Speed scaling state controller
+This controller publishes the current actual execution speed as reported by the robot. Values are
+floating points between 0 and 1.
 
-This repository contains controllers and hardware interface for `ros_control` that are leveraging an
-on-the-fly speed scaling mechanism. For example, they are used by the
-[`ur_robot_driver`](http://wiki.ros.org/ur_robot_driver).
+## scaled_controllers/SpeedScalingStateController
 
-For this, the following subpackages exist:
+In the [`ur_robot_driver`](http://wiki.ros.org/ur_robot_driver) this is calculated by multiplying the two [RTDE](https://www.universal-robots.com/articles/ur/real-time-data-exchange-rtde-guide/) data
+fields `speed_scaling` (which should be equal to the value shown by the speed slider position on the
+teach pendant) and `target_speed_fraction` (Which is the fraction to which execution gets slowed
+down by the controller).
 
-  * A **speed_scaling_interface** to read the value of the current speed scaling into controllers.
-  * A **speed_scaling_state_controller** that publishes the current execution speed as reported by
-  the robot to a topic interface. Values are floating points between 0 and 1.
-  * A **scaled_joint_trajectory_controller** that is similar to the *joint_trajectory_controller*,
-  but it uses the speed scaling reported by the robot to reduce execution speed of the trajectory.
-
+Filling this with the appropriate date is part of the robot hardware interface implementation.
 
 ## Acknowledgement
 Developed in collaboration between:
 
-[<img height="60" alt="Universal Robots A/S" src="scaled_controllers/doc/resources/ur_logo.jpg">](https://www.universal-robots.com/) &nbsp; and &nbsp;
-[<img height="60" alt="FZI Research Center for Information Technology" src="scaled_controllers/doc/resources/fzi_logo.png">](https://www.fzi.de).
+[<img height="60" alt="Universal Robots A/S" src="../scaled_controllers/doc/resources/ur_logo.jpg">](https://www.universal-robots.com/) &nbsp; and &nbsp;
+[<img height="60" alt="FZI Research Center for Information Technology" src="../scaled_controllers/doc/resources/fzi_logo.png">](https://www.fzi.de).
 
 ***
 <!-- 
