@@ -1,0 +1,12 @@
+Source: ros-noetic-scaled-joint-trajectory-controller
+Section: misc
+Priority: optional
+Maintainer: Felix Exner <exner@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-controller-interface, ros-noetic-hardware-interface, ros-noetic-joint-trajectory-controller, ros-noetic-pluginlib, ros-noetic-realtime-tools, ros-noetic-std-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-scaled-joint-trajectory-controller
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-controller-interface, ros-noetic-hardware-interface, ros-noetic-joint-trajectory-controller, ros-noetic-pluginlib, ros-noetic-realtime-tools, ros-noetic-std-msgs
+Description: Provides controllers that use the speed scaling interface.
