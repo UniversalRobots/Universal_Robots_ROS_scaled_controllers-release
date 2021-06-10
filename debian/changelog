@@ -1,0 +1,8 @@
+ros-melodic-scaled-joint-trajectory-controller (0.1.0-1bionic) bionic; urgency=high
+
+  * Added metapackage
+  * Contributors: Felix Exner
+
+ -- Felix Exner <exner@fzi.de>  Wed, 09 Jun 2021 22:00:00 -0000
+
+
