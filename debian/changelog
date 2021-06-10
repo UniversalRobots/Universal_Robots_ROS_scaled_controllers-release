@@ -1,0 +1,8 @@
+ros-melodic-speed-scaling-state-controller (0.1.0-1bionic) bionic; urgency=high
+
+  * Move out of ur_controllers package
+  * Contributors: Felix Exner
+
+ -- Felix Exner <exner@fzi.de>  Wed, 09 Jun 2021 22:00:00 -0000
+
+
