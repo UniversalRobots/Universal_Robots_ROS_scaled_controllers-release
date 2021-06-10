@@ -1,0 +1,12 @@
+Source: ros-noetic-scaled-controllers
+Section: misc
+Priority: optional
+Maintainer: Felix Exner <exner@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-scaled-controllers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-scaled-joint-trajectory-controller, ros-noetic-speed-scaling-interface, ros-noetic-speed-scaling-state-controller
+Description: scaled controllers metapackage
