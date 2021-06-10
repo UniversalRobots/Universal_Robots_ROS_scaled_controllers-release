@@ -1,0 +1,12 @@
+Source: ros-melodic-scaled-controllers
+Section: misc
+Priority: optional
+Maintainer: Felix Exner <exner@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-scaled-controllers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-scaled-joint-trajectory-controller, ros-melodic-speed-scaling-interface, ros-melodic-speed-scaling-state-controller
+Description: scaled controllers metapackage
