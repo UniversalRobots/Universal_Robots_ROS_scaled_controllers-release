@@ -1,0 +1,12 @@
+Source: ros-melodic-speed-scaling-interface
+Section: misc
+Priority: optional
+Maintainer: Felix Exner <exner@fzi.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-hardware-interface, ros-melodic-roscpp
+Homepage: http://wiki.ros.org/speed_scaling_interface
+Standards-Version: 3.9.2
+
+Package: ros-melodic-speed-scaling-interface
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-hardware-interface, ros-melodic-roscpp
+Description: Hardware interface reading a scalar value from robot hardware.
